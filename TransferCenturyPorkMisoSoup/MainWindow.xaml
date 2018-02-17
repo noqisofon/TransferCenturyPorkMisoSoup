@@ -6,7 +6,60 @@
         xmlns:local="clr-namespace:TransferCenturyPorkMisoSoup"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+  <StackPanel> 
+    <Menu HorizontalAlignment="Stretch" VerticalAlignment="Top">
+      <MenuItem Header="接続(_F)">
+        <MenuItem Header="接続(_C) ..." />
+        <MenuItem Header="クイック接続(_Q) ..." />
+        <MenuItem Header="切断(_R)" />
+        <Separator/>
+        <MenuItem Header="ホストの設定(_H) ..." />
+        <MenuItem Header="設定(_S)">
+          <MenuItem Header="WS_FTP から設定をインポート(_W) ..." />
+          <MenuItem Header="設定をファイルに保存(_S) ..." />
+          <MenuItem Header="設定をファイルから復元(_L) ..." />
+          <MenuItem Header="マスターパスワードの変更(_M) ..." />
+          <MenuItem Header="FileZilla XML に設定をエクスポート(_M) ..." />
+          <Separator/>        
+          <MenuItem Header="全設定の消去" />
+        </MenuItem>
+        <Separator/>
+        <MenuItem Header="終了(_X)" />
+      </MenuItem>
+      <MenuItem Header="コマンド(_C)">
+        <MenuItem Header="ダウンロード(_D)" />
+        <MenuItem Header="アップロード(_U)" />
+        <MenuItem Header="名前を変えてダウンロード(_P) ..." />
+        <MenuItem Header="名前を変えてアップロード(_G) ..." />
+      </MenuItem>
+      <MenuItem Header="ブックマーク(_B)"/>
+      <MenuItem Header="表示(_V)"/>
+      <MenuItem Header="ツール(_T)"/>
+      <MenuItem Header="オプション(_O)">
+        <MenuItem Header="環境設定(_S) ..." />
+      </MenuItem>
+      <MenuItem Header="ヘルプ(_H)">
+        <MenuItem Header="転送世紀 とんじる について(_A) ..." />
+      </MenuItem>
+    </Menu>
+
     <Grid>
-        
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+      <TreeView Grid.Column="0" VerticalAlignment="Stretch" />
+      <GridSplitter Grid.Column="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Stretch"
+                    Width="5" />
+      <TreeView Grid.Column="2" VerticalAlignment="Stretch" />
     </Grid>
+
+    <StatusBar HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+      <ListBoxItem Content="ローカル"/>
+    </StatusBar>
+
+  </StackPanel>
 </Window>
