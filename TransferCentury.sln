@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferCenturyPorkMisoSoup", "TransferCenturyPorkMisoSoup\TransferCenturyPorkMisoSoup.csproj", "{042FCCE0-A8CC-48BA-AE84-40DD0628F960}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferCenturyPorkMisoSoup", "PorkMisoSoup\TransferCenturyPorkMisoSoup.csproj", "{042FCCE0-A8CC-48BA-AE84-40DD0628F960}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
