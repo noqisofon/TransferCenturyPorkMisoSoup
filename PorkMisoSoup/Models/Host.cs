@@ -32,7 +32,9 @@ namespace TransferCenturyPorkMisoSoup.Models {
         /// <summary>
         /// anonymous でログインするかどうかを表します。
         /// </summary>
-        /// <remarks>これは ViewModel に入れる方がいい？</remarks>
+        /// <remarks>
+        /// これは ViewModel に入れる方がいい？
+        /// </remarks>
         public bool IsAnonymous { get; set; } = false;
 
         /// <summary>
@@ -48,7 +50,9 @@ namespace TransferCenturyPorkMisoSoup.Models {
         /// <summary>
         /// 真の場合、最後にアクセスしたフォルダを初期フォルダとします。
         /// </summary>
-        /// <remarks>これは ViewModel に入れる方がいい？</remarks>
+        /// <remarks>
+        /// これは ViewModel に入れる方がいい？
+        /// </remarks>
         public bool SetLastAccessedFolderInInitFolder { get; set; } = false;
 
         #endregion ホスト / 基本
@@ -107,8 +111,10 @@ namespace TransferCenturyPorkMisoSoup.Models {
         /// <summary>
         /// ホストの文字コード。
         /// </summary>
-        /// <remarks>多分、ファイルの内容の文字コードだと思われる。</remarks>
-        public Charset HostCharset { get; set; } = Charset.NoConvertion;
+        /// <remarks>
+        /// 多分、ファイルの内容の文字コードだと思われる。
+        /// </remarks>
+        public HostCharset HostCharset { get; set; } = HostCharset.NoConvertion;
 
         /// <summary>
         /// ホスト側の「半角カナを全角に変換」にチェックされたかどうかを表します。
@@ -243,11 +249,19 @@ namespace TransferCenturyPorkMisoSoup.Models {
         /// 接続維持用コマンド周期。
         /// </summary>
         /// <remarks>
-        /// 
+        /// FFFTP では 0..300 秒。0 は無効らしい。
         /// </remarks>
         public int CommandPeriodForConnectionMaintenance { get; set; } = 60;
 
-        
+        /// <summary>
+        /// 転送エラー時の処理
+        /// </summary>
+        public ProcessingAtTimeTransferError ProcessingAtTimeTransferError { get; set; } = ProcessingAtTimeTransferError.AskItEveryTime;
+
+        /// <summary>
+        /// 転送エラー後に再接続するかどうかを表します。
+        /// </summary>
+        public bool ReconnectAfterTransferError { get; set; } = true;
 
 
         #endregion ホスト / 特殊機能

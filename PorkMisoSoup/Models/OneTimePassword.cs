@@ -1,7 +1,7 @@
 ﻿namespace TransferCenturyPorkMisoSoup.Models {
 
     /// <summary>
-    ///
+    ///ワンタイムパスワードの設定
     /// </summary>
     public enum OneTimePassword {
 

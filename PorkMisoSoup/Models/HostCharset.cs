@@ -1,9 +1,9 @@
 ﻿namespace TransferCenturyPorkMisoSoup.Models {
 
     /// <summary>
-    /// 文字コード
+    /// ホストの文字コード
     /// </summary>
-    public enum Charset {
+    public enum HostCharset {
 
         /// <summary>
         /// 無変換

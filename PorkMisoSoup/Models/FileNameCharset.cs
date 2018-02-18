@@ -1,7 +1,7 @@
 ﻿namespace TransferCenturyPorkMisoSoup.Models {
 
     /// <summary>
-    ///
+    /// ファイル名の文字コード
     /// </summary>
     public enum FileNameCharset {
 
@@ -11,7 +11,7 @@
         Auto = 0,
 
         /// <summary>
-        ///
+        /// Shift_JIS
         /// </summary>
         ShiftJIS,
 
