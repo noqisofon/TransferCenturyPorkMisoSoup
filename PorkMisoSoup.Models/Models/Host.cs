@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TransferCenturyPorkMisoSoup.Models {
+namespace TransferCentury.PorkMisoSoup.Models {
 
     /// <summary>
     ///

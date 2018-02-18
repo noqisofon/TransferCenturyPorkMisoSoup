@@ -1,4 +1,4 @@
-﻿namespace TransferCenturyPorkMisoSoup.Models {
+﻿namespace TransferCentury.PorkMisoSoup.Models {
 
     /// <summary>
     /// ファイル名の文字コード

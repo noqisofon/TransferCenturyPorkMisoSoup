@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace TransferCenturyPorkMisoSoup.Views {
+namespace TransferCentury.PorkMisoSoup.Views {
 
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
