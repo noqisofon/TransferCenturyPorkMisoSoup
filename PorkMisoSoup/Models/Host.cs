@@ -173,6 +173,83 @@ namespace TransferCenturyPorkMisoSoup.Models {
         /// </summary>
         public string AttributeChangeCommandName { get; set; } = "SITE CHMOD";
 
+        /// <summary>
+        /// ホストの種類。
+        /// </summary>
+        public HostKind HostKind { get; set; } = HostKind.AutomaticRecognition;
+
+        /// <summary>
+        /// NLST ファイル名/オプション。
+        /// </summary>
+        public string NLSTFileNameOrOption { get; set; } = "-alL";
+
         #endregion ホスト / 高度
+
+        #region ホスト / 暗号化
+
+        /// <summary>
+        /// 暗号化なしで接続を許可するかどうかを表します。
+        /// </summary>
+        public bool AllowConnectionWithNoEnncryption { get; set; } = false;
+
+        /// <summary>
+        /// FTPS(Explicit)で接続するかどうかを表します。
+        /// </summary>
+        public bool ConnectFTPSExplicit { get; set; } = true;
+
+        /// <summary>
+        /// FTPS(Implicit)で接続するかどうかを表します。
+        /// </summary>
+        public bool ConnectFTPSImplicit { get; set; } = true;
+
+        /// <summary>
+        /// SFTP で接続するかどうかを表します。
+        /// </summary>
+        public bool ConnectSFTP { get; set; } = false;
+
+        /// <summary>
+        /// 秘密鍵のテキスト。
+        /// </summary>
+        /// <remarks>FFFTP では未実装なんだって。</remarks>
+        public string TextOfPrivateKey { get; set; } = string.Empty;
+
+        /// <summary>
+        /// 弱い暗号化方式を使用しないかどうかを表します。
+        /// </summary>
+        /// <remarks>
+        /// 真なら【弱い暗号化方式を使用しない】で
+        /// 偽なら【弱い暗号化方式を使用する】。
+        /// </remarks>
+        public bool NotUseWeakEncryptionMethod { get; set; } = true;
+
+        #endregion ホスト / 暗号化
+
+        #region ホスト / 特殊機能
+
+        /// <summary>
+        /// 同時接続数。
+        /// </summary>
+        /// <remarks>
+        /// FFFTP では 1..4。
+        /// </remarks>
+        public int MaximumConcurrentConnectionQuantity { get; set; } = 1;
+
+        /// <summary>
+        /// メインウィンドウのソケットを再利用するかどうかを表します。
+        /// </summary>
+        public bool RecycleSocket { get; set; } = true;
+
+        /// <summary>
+        /// 接続維持用コマンド周期。
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        public int CommandPeriodForConnectionMaintenance { get; set; } = 60;
+
+        
+
+
+        #endregion ホスト / 特殊機能
     }
 }

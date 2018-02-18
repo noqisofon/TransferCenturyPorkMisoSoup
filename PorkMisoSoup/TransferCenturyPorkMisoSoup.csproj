@@ -67,6 +67,7 @@
     <Compile Include="Models\FileNameCharset.cs" />
     <Compile Include="Models\Host.cs" />
     <Compile Include="Models\HostGroup.cs" />
+    <Compile Include="Models\HostKind.cs" />
     <Compile Include="Models\NetworkKind.cs" />
     <Compile Include="Models\OneTimePassword.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
