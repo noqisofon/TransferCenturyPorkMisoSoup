@@ -1,9 +1,7 @@
-
 namespace TransferCenturyPorkMisoSoup.Models {
 
-
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public class HostGroup {
 
